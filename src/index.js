@@ -1,7 +1,6 @@
 import App from './components/App/App';
+import { render } from './utils';
+import './index.css';
 
-console.log( App() );
-
-const container = document.getElementById('quickDisplay')
-container.innerHTML = App();
+render('App', App);
 
