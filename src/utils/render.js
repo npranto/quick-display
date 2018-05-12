@@ -2,7 +2,7 @@ const { document } = window;
 
 const render = (parentId, Component, props) => {
   try {
-    if (typeof Component !== "function") {
+    if (typeof Component !== 'function') {
       throw new Error('Component must be a function!');
     }
     const container = document.getElementById(parentId);
@@ -13,6 +13,6 @@ const render = (parentId, Component, props) => {
   } catch (e) {
     console.error(e);
   }
-}
+};
 
 export default render;
