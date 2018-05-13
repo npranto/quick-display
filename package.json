@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --open --config webpack.dev.js",
-    "lint": "eslint src/"
+    "deploy": "surge"
   },
   "repository": {
     "type": "git",
