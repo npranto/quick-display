@@ -1,0 +1,96 @@
+.NavigationBar {
+  padding: 1% 5%;
+}
+.NavigationBar ul {
+  list-style-type: none;
+}
+.NavigationBar .nav-sections {
+  display: flex;
+  justify-content: space-between;
+}
+.NavigationBar .logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.NavigationBar .tabs-section {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.NavigationBar .tabs-section .tabs {
+  line-height: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.NavigationBar .tabs-section .tab {
+  margin-left: 7%;    
+}
+.NavigationBar .tabs-section a {
+  color: grey;
+  transition: 0.4s ease-in-out;
+}
+.NavigationBar .tabs-section a:hover{
+  color: black
+}
+
+@media all and (max-width: 699px) { 
+  .NavigationBar .large {
+    display: none;
+  }
+  .NavigationBar .small {
+    display: block;
+  }
+  .NavigationBar #toggle {
+    display: none;
+  }
+  .NavigationBar .toggler label {
+    cursor: pointer;
+  }
+  .navigation-toggle-menu {
+    display: none;
+    padding: 1% 5%;
+    background: white;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+  }
+  .navigation-toggle-menu .menu-item {
+    padding: 1% 0%;
+    text-align: right;
+  }
+  .navigation-toggle-menu .menu-item a {
+    color: grey;
+    transition: 0.4s ease-in-out;
+  }
+  .navigation-toggle-menu .menu-item a:hover{
+    color: black
+  }
+}
+
+@media all and (min-width: 700px) { 
+  .NavigationBar .large {
+    display: block;
+  }
+  .NavigationBar .small {
+    display: none;
+  }
+  .navigation-toggle-menu {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
