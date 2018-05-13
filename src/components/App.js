@@ -3,7 +3,12 @@ import './App.css';
 
 const App = () => `
   <main class="App">
-    ${NavigationBar()}
+    <section class="navigation">
+      ${NavigationBar()}
+    </section>
+    <section class="content">
+      Content...
+    </section>
   </main>
 `;
 

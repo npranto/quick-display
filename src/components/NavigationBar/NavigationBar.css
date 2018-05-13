@@ -1,5 +1,6 @@
 .NavigationBar {
   padding: 1% 5%;
+  background: lightcyan;
 }
 .NavigationBar ul {
   list-style-type: none;
@@ -33,7 +34,7 @@
   transition: 0.4s ease-in-out;
 }
 .NavigationBar .tabs-section a:hover{
-  color: black
+  color: black;
 }
 
 @media all and (max-width: 699px) { 
