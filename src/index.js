@@ -3,8 +3,8 @@ import { render } from './utils';
 import { toggleNavigationMenu } from './events';
 import './index.css';
 
-const executeBeforeContentRender = () => {
-  return new Promise((resolve, reject) => {
+const executeBeforeContentRender = () => (
+  new Promise((resolve, reject) => {
     try {
       // actions to execute before rendering any elements to the DOM (start)
       // CODE HERE...
@@ -14,11 +14,12 @@ const executeBeforeContentRender = () => {
       console.error(error);
       reject(error);
     }
-  });
-};
+  })
+);
 
-const executeAfterContentRender = () => {
-  return new Promise((resolve, reject) => {
+
+const executeAfterContentRender = () => (
+  new Promise((resolve, reject) => {
     try {
       // actions to execute after rendering all elements to the DOM (start)
       // CODE HERE...
@@ -29,8 +30,9 @@ const executeAfterContentRender = () => {
       console.error(error);
       reject(error);
     }
-  });
-};
+  })
+);
+
 
 // START HERE...
 executeBeforeContentRender()
