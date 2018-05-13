@@ -1,7 +1,7 @@
 const { document } = window;
 
-const render = (parentId, Component, props) => {
-  return new Promise((resolve, reject) => {
+const render = (parentId, Component, props) => (
+  new Promise((resolve, reject) => {
     try {
       if (typeof Component !== 'function') {
         throw new Error('Component must be a function!');
@@ -15,7 +15,7 @@ const render = (parentId, Component, props) => {
     } catch (e) {
       reject(e);
     }
-  });
-};
+  })
+);
 
 export default render;
