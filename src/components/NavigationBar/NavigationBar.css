@@ -43,7 +43,7 @@
   .NavigationBar .small {
     display: block;
   }
-  .NavigationBar #toggle {
+  .NavigationBar #___toggle-navigation-menu___ {
     display: none;
   }
   .NavigationBar .toggler label {
@@ -52,7 +52,7 @@
   .navigation-toggle-menu {
     display: none;
     padding: 1% 5%;
-    background: white;
+    background: lightcyan;
     z-index: 100;
     position: absolute;
     width: 100%;
@@ -70,7 +70,10 @@
     transition: 0.4s ease-in-out;
   }
   .navigation-toggle-menu .menu-item a:hover{
-    color: black
+    color: black;
+  }
+  .navigation-toggle-menu .menu-item label {
+    cursor: pointer;
   }
 }
 
