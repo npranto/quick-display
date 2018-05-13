@@ -28,9 +28,9 @@ const NavigationBar = () => `
           </li>
           <li class="tab toggler small">
             <a href="#"> 
-              <label for="toggle">
+              <label for="___toggle-navigation-menu___">
                 <i class="fas fa-bars fa-2x "></i> 
-                <input type="checkbox" id="toggle" />
+                <input type="checkbox" id="___toggle-navigation-menu___" />
               </label>
             </a>
           </li>
@@ -41,19 +41,29 @@ const NavigationBar = () => `
 
   <div class="navigation-toggle-menu">
     <div class="menu-item"> 
-      <a href=""> Welcome </a> 
+      <a href=""> 
+        <label for="___toggle-navigation-menu___"> Welcome </label> 
+      </a> 
     </div>
     <div class="menu-item"> 
-      <a href=""> Features </a> 
+      <a href=""> 
+        <label for="___toggle-navigation-menu___"> Features </label>
+      </a> 
     </div>
     <div class="menu-item"> 
-      <a href=""> Usage </a> 
+      <a href=""> 
+        <label for="___toggle-navigation-menu___"> Usage </label>
+      </a> 
     </div>
     <div class="menu-item"> 
-      <a href=""> Technologies </a> 
+      <a href=""> 
+        <label for="___toggle-navigation-menu___"> Technologies </label>
+      </a> 
     </div>
     <div class="menu-item"> 
-      <a href=""> Contributors </a> 
+      <a href=""> 
+        <label for="___toggle-navigation-menu___"> Contributors </label>
+      </a> 
     </div>
   </div>
 `;
