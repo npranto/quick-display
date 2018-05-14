@@ -1,0 +1,6 @@
+.Welcome {
+    display: flex;
+}
+.Welcome .app-details, .Welcome .app-feature-showcase {
+    width: 50%;
+}
