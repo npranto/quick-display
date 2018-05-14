@@ -4,23 +4,27 @@ const Welcome = () => {
   return `
     <div class="Welcome">
       <div class="app-details">
-        <h1>
+        <h1 class="title">
           Quick Display
         </h1>
-        <h3>
+        <p class="description">
           A quick and simple single page to display and showcase your GitHub ideas
-        </h3>
+        </p>
         <div class="welcome-actions">
-          <div class="start">
-            <a href="#"> Start Using Quick Display
-          </div>
-          <div class="github">
-            <a href="#"> GitHub </a>
-          </div>
+          <a href="#"> 
+            <div class="block start">
+              Start 
+            </div>
+          </a>
+          <a href="#">
+            <div class="block github">
+              GitHub 
+            </div>
+          </a>
         </div>
       </div>
       <div class="app-feature-showcase">
-        App Feature Showcase
+        app-feature-showcase
       </div>
     </div>
   `;

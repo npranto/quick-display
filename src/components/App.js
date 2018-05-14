@@ -13,12 +13,14 @@ const App = () => `
     </section>
     <section class="content">
         ${Welcome()}
-        ${Features()}
-        ${Usage()}
-        ${Technologies()}
-        ${Contributors()}
+        
     </section>
   </main>
 `;
+
+// ${Features()}
+// ${Usage()}
+// ${Technologies()}
+// ${Contributors()}
 
 export default App;
