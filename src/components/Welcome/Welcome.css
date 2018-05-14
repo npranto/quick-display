@@ -1,0 +1,34 @@
+.Welcome {
+    display: flex;
+}
+.Welcome .app-details, .Welcome .app-feature-showcase {
+    width: 50%;
+}
+.Welcome .title {
+    font-size: 3em;
+    font-weight: 900;
+    margin: 5% 0%;
+}
+.Welcome .description {
+    font-size: 2em;
+    margin: 2.5% 0%;
+}
+.Welcome .welcome-actions {
+    margin: 5% 0%;
+}
+.Welcome a {
+    text-decoration: none;
+    color: inherit;
+}
+.Welcome .block {
+    padding: 3% 6%;
+    box-sizing: border-box;
+    display: inline-block;
+    color: white;
+}
+.Welcome .start {
+    background: #2e7d32;
+}
+.Welcome .github {
+    background: #ff6f00;
+}
