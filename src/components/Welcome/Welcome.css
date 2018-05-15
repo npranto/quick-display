@@ -49,3 +49,48 @@
     max-width: 100%;
     height: auto;
 }
+
+@media all and (max-width: 450px) { 
+	.Welcome {
+		flex-direction: column;
+		align-items: center;
+	}
+	.Welcome .app-feature-showcase {
+		order: -1;
+		width: 100%
+	}
+	.Welcome .app-details {
+		text-align: center;
+		width: 95%;
+	}
+}
+
+@media all and (max-width: 699px) { 
+	.Welcome {
+		flex-direction: column;
+		align-items: center;
+	}
+	.Welcome .app-feature-showcase {
+		order: -1;
+		width: 90%
+	}
+	.Welcome .app-details {
+		text-align: center;
+		width: 90%;
+	}
+}
+
+@media all and (min-width: 700px) and (max-width: 1050px) { 
+	.Welcome {
+		flex-direction: column;
+		align-items: center;
+	}
+	.Welcome .app-feature-showcase {
+		order: -1;
+		width: 50%
+	}
+	.Welcome .app-details {
+		text-align: center;
+		width: 75%;
+	}
+}
