@@ -1,34 +1,51 @@
 .Welcome {
     display: flex;
+    padding: 0% 5%;
 }
-.Welcome .app-details, .Welcome .app-feature-showcase {
-    width: 50%;
+.Welcome .app-details {
+    width: 40%;
+}
+.Welcome .app-feature-showcase {
+    width: 60%;
 }
 .Welcome .title {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 900;
     margin: 5% 0%;
 }
 .Welcome .description {
     font-size: 2em;
     margin: 2.5% 0%;
+    color: gray;
 }
 .Welcome .welcome-actions {
     margin: 5% 0%;
 }
-.Welcome a {
-    text-decoration: none;
-    color: inherit;
-}
+
 .Welcome .block {
     padding: 3% 6%;
     box-sizing: border-box;
     display: inline-block;
     color: white;
+    margin-right: 2%;
+    opacity: 0.85;
+    transition: opacity 0.2s ease-in-out;
+}
+.Welcome .block:hover{
+    opacity: 1;
 }
 .Welcome .start {
     background: #2e7d32;
 }
 .Welcome .github {
     background: #ff6f00;
+}
+.Welcome .app-feature-showcase {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+.Welcome .app-feature-showcase img {
+    max-width: 100%;
+    height: auto;
 }

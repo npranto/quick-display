@@ -1,3 +1,4 @@
+import AppFeatureShowcasePicture from './../../assets/images/ash-edmonds-unsplash.jpg';
 import './Welcome.css';
 
 const Welcome = () => {
@@ -24,7 +25,7 @@ const Welcome = () => {
         </div>
       </div>
       <div class="app-feature-showcase">
-        app-feature-showcase
+        <img src=${AppFeatureShowcasePicture} alt="Photo by Michał Kubalczyk on Unsplash" />
       </div>
     </div>
   `;
