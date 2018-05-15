@@ -11,5 +11,9 @@
 .App .content {
   flex-grow: 1;
   overflow: scroll;
-  background: lightgoldenrodyellow;
+  background: #060606;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
