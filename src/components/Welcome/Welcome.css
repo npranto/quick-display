@@ -1,9 +1,14 @@
 .Welcome {
     display: flex;
-    padding: 0% 5%;
+		padding: 7.5% 5%;
+		background: #000000;
+		color: white;
 }
 .Welcome .app-details {
-    width: 40%;
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 }
 .Welcome .app-feature-showcase {
     width: 60%;
@@ -30,12 +35,13 @@
     margin-right: 2%;
     opacity: 0.85;
 		transition: opacity 0.2s ease-in-out, border 0.2s ease-in-out;
-		font-size: 1.5em;
-		border: 2px solid grey;
+		font-size: 1.25em;
+		/* border: 2px solid lightgray; */
+		/* border-radius: 4px; */
 }
 .Welcome .block:hover{
 		opacity: 1;
-		border-color: lightgrey;
+		/* border-color: white; */
 }
 .Welcome .start {
     background: #2e7d32;
@@ -52,6 +58,9 @@
 .Welcome .app-feature-showcase img {
     max-width: 100%;
     height: auto;
+}
+.Welcome .welcome-actions {
+	margin: 10% 0%;
 }
 
 @media all and (max-width: 450px) { 
@@ -73,12 +82,9 @@
     margin: 5% 0%;
 	}
 	.Welcome .description {
-			font-size: 1.5em;
-			margin: 2.5% 0%;
-			color: gray;
-	}
-	.Welcome .welcome-actions {
-    margin: 10% 0%;
+		font-size: 1.5em;
+		margin: 2.5% 0%;
+		color: gray;
 	}
 }
 
@@ -118,8 +124,8 @@
     margin: 5% 0%;
 	}
 	.Welcome .description {
-			font-size: 3.5em;
-			margin: 2.5% 0%;
-			color: gray;
+		font-size: 3.5em;
+		margin: 2.5% 0%;
+		color: gray;
 	}
 }

@@ -13,12 +13,11 @@ const App = () => `
     </section>
     <section class="content">
         ${Welcome()}
-        
+        ${Features()}
     </section>
   </main>
 `;
 
-// ${Features()}
 // ${Usage()}
 // ${Technologies()}
 // ${Contributors()}
