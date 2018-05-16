@@ -2,7 +2,9 @@ import './Features.css';
 
 const Features = () => {
   return `
-    Features
+		<div class="Features">
+			Features
+		</div>
   `;
 };
 

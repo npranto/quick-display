@@ -12,8 +12,8 @@ const App = () => `
       ${NavigationBar()}
     </section>
     <section class="content">
-        ${Welcome()}
-        ${Features()}
+      ${Welcome()}
+      ${Features()}
     </section>
   </main>
 `;

@@ -10,8 +10,8 @@
 }
 .App .content {
   flex-grow: 1;
-  overflow: scroll;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  overflow: auto;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
 }
