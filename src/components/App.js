@@ -11,8 +11,8 @@ const App = () => `
     <section class="navigation">
       ${NavigationBar()}
     </section>
-    <section class="content">
-			${Usage()}
+		<section class="content">
+			${Technologies()}
     </section>
   </main>
 `;
