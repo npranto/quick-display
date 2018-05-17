@@ -30,7 +30,8 @@ const Features = () => {
     },
   ];
   return `
-    <div class="Features">
+		<div class="Features">
+			<h1 class="content-subtitle"> Features </h1>
       ${renderFeatures(features)}
     </div>
   `;
