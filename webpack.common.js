@@ -23,7 +23,7 @@ const webpackCommon = {
         ],
       },
       {
-        test: /\.(png|jpg|gif|jpeg|mp4)$/,
+        test: /\.(png|jpg|gif|jpeg|mp4|svg)$/,
         use: [
           {
             loader: 'file-loader',
