@@ -12,7 +12,7 @@ const App = () => `
       ${NavigationBar()}
     </section>
 		<section class="content">
-			${Technologies()}
+			${Contributors()}
     </section>
   </main>
 `;

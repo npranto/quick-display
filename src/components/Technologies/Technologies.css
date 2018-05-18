@@ -27,10 +27,15 @@
 		padding-right: 15%;
 	}
 }
-@media all and (min-width: 335px) and (max-width: 600px) {
+@media all and (max-width: 600px) {
 	.Technologies .technology-item {
-		width: 150px;
-		height: 150px;
+		flex-grow: 1;
+	}
+	.Technologies .technology-item {
+		width: 80px;
+		height: 80px;
+		border: 1px solid whitesmoke;
+		margin: 1%;
 	}
 }
 @media all and (max-width: 335px) {
