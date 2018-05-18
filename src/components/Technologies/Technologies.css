@@ -5,13 +5,17 @@
 }
 .Technologies .technology-list {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .Technologies .technology-item {
 	width: 200px;
 	height: 200px;
-	background: orange;
+	/* background: orange; */
 	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	padding: 2%;
 }
 .Technologies .technology-item img{
 	max-width: 100%;
@@ -23,3 +27,16 @@
 		padding-right: 15%;
 	}
 }
+@media all and (min-width: 335px) and (max-width: 600px) {
+	.Technologies .technology-item {
+		width: 150px;
+		height: 150px;
+	}
+}
+@media all and (max-width: 335px) {
+	.Technologies .technology-item {
+		padding: 5%;
+	}
+}
+
+
