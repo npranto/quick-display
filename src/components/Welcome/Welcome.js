@@ -1,9 +1,26 @@
+import { getState } from './../../state';
+import { listRender } from './../../utils';
 import AppFeatureShowcasePicture from './../../assets/images/ash-edmonds-unsplash.jpg';
 import './Welcome.css';
 
+const renderActions = actions => (
+  listRender(actions, (action) => {
+    const { name, url } = action;
+    return `
+      <a href=${url}> 
+        <div class="block ${name.toLowerCase()}">
+          ${name} 
+        </div>
+      </a>
+    `;
+  })
+);
+
 const Welcome = () => {
+  const { welcome } = getState();
+  const { actions } = welcome;
   return `
-    <div class="Welcome">
+    <div class="Welcome" id="Welcome">
       <div class="app-details">
         <h1 class="title">
           Quick Display
@@ -12,16 +29,7 @@ const Welcome = () => {
           A quick and simple single page to display and showcase your GitHub ideas
         </p>
         <div class="welcome-actions">
-          <a href="#"> 
-            <div class="block start">
-              Start 
-            </div>
-          </a>
-          <a href="#">
-            <div class="block github">
-              GitHub 
-            </div>
-          </a>
+          ${renderActions(actions)}
         </div>
       </div>
       <div class="app-feature-showcase">

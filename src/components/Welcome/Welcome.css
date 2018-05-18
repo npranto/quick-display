@@ -34,10 +34,10 @@
 	display: inline-block;
 	color: white;
 	margin-right: 2%;
-	opacity: 0.85;
+	opacity: 0.90;
 	transition: opacity 0.2s ease-in-out, border 0.2s ease-in-out;
 	font-size: 1em;
-	border: 2px solid grey;
+	border: 1px solid lightgray;
 }
 .Welcome .block:hover{
 	opacity: 1;
@@ -84,6 +84,17 @@
 	.Welcome .app-feature-showcase img {
 		max-width: 100%;
 		max-height: 100%;
+	}
+	.Welcome .block {
+		padding: 3% 6%;
+		box-sizing: border-box;
+		display: inline-block;
+		color: white;
+		margin-right: 2%;
+		opacity: 0.90;
+		transition: opacity 0.2s ease-in-out, border 0.2s ease-in-out;
+		font-size: 1.15em;
+		border: 1px solid lightgray;
 	}
 }
 @media all and (max-width: 320px) { 

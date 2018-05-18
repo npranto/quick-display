@@ -12,6 +12,10 @@ const App = () => `
       ${NavigationBar()}
     </section>
 		<section class="content">
+			${Welcome()}
+			${Features()}
+			${Usage()}
+			${Technologies()}
 			${Contributors()}
     </section>
   </main>

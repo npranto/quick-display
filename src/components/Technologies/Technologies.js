@@ -36,7 +36,7 @@ const Technologies = () => {
 	];
 
 	return `
-		<div class="Technologies">
+		<div class="Technologies" id="Technologies">
 			<h1 class="content-subtitle"> Technologies </h1>
 			<div class="technology-list">
 				${renderTechnologies(technologies)}

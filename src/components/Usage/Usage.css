@@ -2,17 +2,23 @@
 	display: flex;
 	flex-direction: column;
 	padding: 5% 5%;
+	background: lightcyan;
 }
 .Usage .usage-video {
 	display: flex;
 	justify-content: center;
+	transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.Usage .usage-video:hover {
+	transform: scale(1.025);	
 }
 .Usage .usage-video .player {
 	width: 100% !important;
 }
 .Usage .usage-video video {
 	width: 100% !important;
-  height: auto
+	height: auto;
 }
 
 @media all and (min-width: 900px) {
