@@ -1,6 +1,6 @@
 .NavigationBar {
   padding: 1% 5%;
-  background: whitesmoke;
+	background: black;
 }
 .NavigationBar ul {
   list-style-type: none;
@@ -36,11 +36,11 @@
   margin-left: 7%;    
 }
 .NavigationBar .tabs-section a {
-  color: grey;
+  color: lightgray;
   transition: 0.4s ease-in-out;
 }
 .NavigationBar .tabs-section a:hover{
-  color: black;
+  color: white;
 }
 
 @media all and (max-width: 699px) { 
@@ -59,7 +59,7 @@
   .navigation-toggle-menu {
     display: none;
     padding: 1% 5%;
-    background: whitesmoke;
+    background: #FEDC3D;
     z-index: 100;
     position: absolute;
     width: 100%;
@@ -73,7 +73,7 @@
     text-align: right;
   }
   .navigation-toggle-menu .menu-item a {
-    color: grey;
+    color: gray;
     transition: 0.4s ease-in-out;
   }
   .navigation-toggle-menu .menu-item a:hover{

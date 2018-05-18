@@ -5,7 +5,7 @@ import './Usage.css';
 
 const Usage = () => {
   return `
-		<div class="Usage">
+		<div class="Usage" id="Usage">
 			<h1 class="content-subtitle"> How To Use Quick Display </h1> 
 			<div class="usage-video">
 				<div class="player">

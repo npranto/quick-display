@@ -3,15 +3,16 @@ import './Feature.css';
 
 const Feature = ({ key, description, photo }) => {
 	return `
-    <div class="Feature">
-      <div class="feature-description">
+		<div class="Feature">
+			<div class="feature-photo">
+        <img src=${photo} alt="Feature Photo" />
+      </div>
+      <div class="feature-description ${isOdd(key) ? 'stick-left' : ''}">
         <p class="description">
           ${description}
         </p>
       </div>
-      <div class="feature-photo ${isOdd(key) ? 'stick-left' : ''}">
-        <img src=${photo} alt="Feature Photo" />
-      </div>
+      
     </div>
 	`;
 };

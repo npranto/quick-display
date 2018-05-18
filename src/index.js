@@ -1,6 +1,6 @@
 import App from './components/App';
 import { render } from './utils';
-import { toggleNavigationMenu, initializaPlyr } from './events';
+import { toggleNavigationMenu, enableNavigationMenuSmoothScroll, initializaPlyr } from './events';
 import './../node_modules/plyr/dist/plyr.css';
 import './index.css';
 
@@ -27,6 +27,7 @@ const executeAfterContentRender = () => (
       // actions to execute after rendering all elements to the DOM (end)
 			initializaPlyr();
 			toggleNavigationMenu();
+			enableNavigationMenuSmoothScroll();
       resolve(true);
     } catch (error) {
       console.error(error);
