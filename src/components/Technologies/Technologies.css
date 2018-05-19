@@ -12,7 +12,6 @@
 .Technologies .technology-item {
 	width: 200px;
 	height: 200px;
-	/* background: orange; */
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
@@ -22,6 +21,7 @@
 	max-width: 100%;
 	max-height: 100%;
 }
+
 @media all and (min-width: 900px) {
 	.Technologies {
 		padding-left: 15%;
@@ -35,7 +35,6 @@
 	.Technologies .technology-item {
 		width: 80px;
 		height: 80px;
-		/* border: 1px solid whitesmoke; */
 		margin: 1%;
 	}
 }

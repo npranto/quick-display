@@ -1,20 +1,20 @@
-import QuickDisplayPoster from './../../assets/images/ash-edmonds-unsplash.jpg';
-import QuickDisplayVideo from './../../assets/videos/quick-display.mp4';
-
+import { getState } from './../../state';
 import './Usage.css';
 
 const Usage = () => {
+  const { usage } = getState();
+  const { poster, video } = usage;
   return `
-		<div class="Usage" id="Usage">
-			<h1 class="content-subtitle"> How To Use Quick Display </h1> 
-			<div class="usage-video">
-				<div class="player">
-					<video poster=${QuickDisplayPoster} id="player" playsinline controls>
-							<source src=${QuickDisplayVideo} type="video/mp4">
-					</video>
-				</div>
-			</div>
-		</div>
+    <div class="Usage" id="Usage">
+      <h1 class="content-subtitle"> How To Use Quick Display </h1> 
+      <div class="usage-video">
+        <div class="player">
+          <video poster=${poster} id="player" playsinline controls>
+              <source src=${video} type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
   `;
 };
 

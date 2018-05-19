@@ -1,6 +1,10 @@
 import App from './components/App';
 import { render } from './utils';
-import { toggleNavigationMenu, enableNavigationMenuSmoothScroll, initializaPlyr } from './events';
+import {
+  toggleNavigationMenu,
+  enableNavigationMenuSmoothScroll,
+  initializaPlyr,
+} from './events';
 import './../node_modules/plyr/dist/plyr.css';
 import './index.css';
 
@@ -18,16 +22,14 @@ const executeBeforeContentRender = () => (
   })
 );
 
-
 const executeAfterContentRender = () => (
   new Promise((resolve, reject) => {
     try {
       // actions to execute after rendering all elements to the DOM (start)
-      // CODE HERE...
+      initializaPlyr();
+      toggleNavigationMenu();
+      enableNavigationMenuSmoothScroll();
       // actions to execute after rendering all elements to the DOM (end)
-			initializaPlyr();
-			toggleNavigationMenu();
-			enableNavigationMenuSmoothScroll();
       resolve(true);
     } catch (error) {
       console.error(error);
@@ -36,14 +38,11 @@ const executeAfterContentRender = () => (
   })
 );
 
-
 // START HERE...
 executeBeforeContentRender()
   .then(() => render('App', App))
   .catch(errorInExecutionBefore => console.error('ERROR IN EXECUTION BEFORE: \n', errorInExecutionBefore))
   .then(() => executeAfterContentRender())
   .catch(errorInRender => console.error('ERROR IN RENDER: \n', errorInRender))
-  .then(() => {
-    // DONE!
-  })
+  .then(() => console.log('READY!'))
   .catch(errorInExecutionAfter => console.error('ERROR IN EXECUTION AFTER: \n', errorInExecutionAfter));

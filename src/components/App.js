@@ -11,20 +11,14 @@ const App = () => `
     <section class="navigation">
       ${NavigationBar()}
     </section>
-		<section class="content">
-			${Welcome()}
-			${Features()}
-			${Usage()}
-			${Technologies()}
-			${Contributors()}
+    <section class="content">
+      ${Welcome()}
+      ${Features()}
+      ${Usage()}
+      ${Technologies()}
+      ${Contributors()}
     </section>
   </main>
 `;
-
-// ${Welcome()}
-// ${Features()}
-// ${Usage()}
-// ${Technologies()}
-// ${Contributors()}
 
 export default App;
