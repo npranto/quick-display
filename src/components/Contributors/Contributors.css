@@ -1,7 +1,7 @@
 .Contributors {
 	display: flex;
 	flex-direction: column;
-	padding: 5% 5%;
+	padding: 2% 5%;
 	background: #01ABAA;
 }
 .Contributors .contributor-list {
