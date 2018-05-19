@@ -13,6 +13,15 @@
       "error", {
         "devDependencies": true
       }
+    ],
+    "no-console": [
+      "error", { 
+        "allow": [
+          "warn",
+          "error",
+          "log"
+        ] 
+      }
     ]
   }
 }
