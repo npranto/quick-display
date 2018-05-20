@@ -1,6 +1,6 @@
 .NavigationBar {
   padding: 1% 5%;
-	background: black;
+  background: black;
 }
 .NavigationBar ul {
   list-style-type: none;
@@ -8,6 +8,12 @@
 .NavigationBar .nav-sections {
   display: flex;
   justify-content: space-between;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 .NavigationBar .logo-container {
   display: flex;
