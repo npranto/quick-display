@@ -30,7 +30,6 @@ const executeAfterContentRender = () => (
       initializaPlyr();
       toggleNavigationMenu();
       enableNavigationMenuSmoothScroll();
-      enableSlideInEffect();
       // actions to execute after rendering all elements to the DOM (end)
       resolve(true);
     } catch (error) {
